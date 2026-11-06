@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ app_name }} — Portfolio Edition</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <div class="shell">
+    <!-- ── Left Sidebar Navigation ── -->
+    <aside class="sidebar">
+      <div>
+        <div class="brand-badge">Portfolio Edition</div>
+        <h1>Enterprise IT<br/>Support Copilot</h1>
+        <p class="muted">Agentic RAG with LangGraph, Pinecone, Groq & Tavily.</p>
+
+        <nav class="nav-menu">
+          <button class="nav-btn active" data-tab="tab-overview">
+            <span class="icon">📋</span> Overview
+          </button>
+          <button class="nav-btn" data-tab="tab-chat">
+            <span class="icon">💬</span> AI Support Chat
+          </button>
+          <button class="nav-btn" data-tab="tab-kb">
+            <span class="icon">📚</span> Knowledge Base
+          </button>
+          <button class="nav-btn" data-tab="tab-tickets">
+            <span class="icon">🎫</span> IT Support Tickets
+          </button>
+          <button class="nav-btn" data-tab="tab-approvals">
+            <span class="icon">🛡️</span> Pending Approvals
+            <span id="approvalsBadge" class="badge-count hidden">0</span>
+          </button>
+          <button class="nav-btn" data-tab="tab-eval">
+            <span class="icon">📊</span> Evaluation & Metrics
+          </button>
+          <button class="nav-btn" data-tab="tab-health">
+            <span class="icon">⚡</span> System Health
+          </button>
+        </nav>
+      </div>
+
+      <div>
+        <div class="workflow-card">
+          <h3>LangGraph Workflow</h3>
+          <div class="flow-step">1. Injection Defense</div>
+          <div class="flow-step">2. Multi-Intent Routing</div>
+          <div class="flow-step">3. Private KB Retrieval</div>
+          <div class="flow-step">4. Evidence Quality Grading</div>
+          <div class="flow-step">5. Tavily Web Fallback</div>
+          <div class="flow-step">6. Answer Verification</div>
+        </div>
+        <button id="openUpload" class="btn-secondary full" style="margin-top: 12px;">+ Ingest Document</button>
+      </div>
+    </aside>
+
+    <!-- ── Main Dashboard Area ── -->
+    <main class="main-area">
+      <header class="topbar">
+        <div class="topbar-left">
+          <span class="status-dot"></span>
+          <span id="pageTitle" style="font-weight: 600;">System Overview</span>
+        </div>
+        <div style="display: flex; gap: 10px; align-items: center;">
+          <span class="pill">Groq: openai/gpt-oss-20b</span>
+          <span class="pill">all-MiniLM-L6-v2 (384d)</span>
+        </div>
+      </header>
+
+      <!-- ── TAB 1: OVERVIEW ── -->
+      <section id="tab-overview" class="tab-content active section-view">
+        <div class="section-header">
+          <div>
+            <h2>Project Overview & Architecture</h2>
+            <p class="muted">Production-style Enterprise IT Support Agentic RAG Copilot built for ₹0 Free-Tier Cloud Deployment.</p>
+          </div>
+        </div>
+
+        <div class="overview-grid">
+          <div>
+            <div class="card">
+              <h3>Core Capabilities</h3>
+              <ul style="padding-left: 20px; line-height: 1.8; color: var(--text-muted); font-size: 13px;">
+                <li><strong>Grounded RAG Pipeline</strong>: Searches private Pinecone vector store (384-dim) before falling back to external web search.</li>
+                <li><strong>LangGraph Agentic Control</strong>: Conditional routing across 16 DAG nodes, evidence quality grading, and query rewriting.</li>
+                <li><strong>Self-Correcting Verification</strong>: Dedicated verification node cross-checks generated answers against retrieved evidence to eliminate hallucination.</li>
+                <li><strong>Human-in-the-Loop (HITL) Gate</strong>: High-severity tickets (P1/P2) require explicit administrator approval before execution.</li>
+                <li><strong>Tool Registry</strong>: Controlled allowlisted tools with Pydantic validation (KB search, Web search, IT checklists, Tickets).</li>
+                <li><strong>Session-Isolated Memory</strong>: Multi-turn conversation context preserved per session without cross-user leakage.</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Architecture Diagram</h3>
+              <pre style="background: #0d1219; padding: 16px; border-radius: 8px; font-size: 11px; overflow-x: auto; color: #a9b5c4; border: 1px solid var(--border-color);">
+User Ingestion / Chat Query
+   │
+   ▼
+FastAPI + Prompt Injection Defense ─────────► Blocked if Malicious
+   │
+   ▼
+Multi-Intent Router (Groq LLM)
+   ├── Greetings / Casual ──────────────────► Direct Response
+   ├── IT Tickets / Lookup ─────────────────► IT Ticket Database (SQLite)
+   │                                          └── P1/P2 ──► HITL Approval Gate
+   ├── IT Diagnostic Checklists ────────────► Troubleshooting Guide Tool
+   └── Company IT Knowledge ────────────────► Private Pinecone KB (all-MiniLM-L6-v2)
+                                                 │
+                                           Evidence Grade?
+                                           ├── GOOD ──► Generate Grounded KB Answer
+                                           └── WEAK ──► Tavily Web Fallback
+                                                           │
+                                                     Answer Verification
+                                                           │
+                                                     Final Response + Citations
+              </pre>
+            </div>
+          </div>
+
+          <div>
+            <div class="card">
+              <h3>Free-Tier Deployment</h3>
+              <p class="muted" style="margin-bottom: 12px;">Architecture strictly engineered for ₹0 deployment budget:</p>
+              <div style="font-size: 12px; line-height: 1.6; color: var(--text-muted);">
+                <div style="margin-bottom: 8px;"><strong style="color: var(--text-main);">Compute</strong>: Render Free Web Service (512MB RAM)</div>
+                <div style="margin-bottom: 8px;"><strong style="color: var(--text-main);">Inference</strong>: Groq API (Free Tier LLM)</div>
+                <div style="margin-bottom: 8px;"><strong style="color: var(--text-main);">Vectors</strong>: Pinecone Starter (1 index, 2GB free)</div>
+                <div style="margin-bottom: 8px;"><strong style="color: var(--text-main);">Web Search</strong>: Tavily API (1,000 free req/mo)</div>
+                <div style="margin-bottom: 8px;"><strong style="color: var(--text-main);">Embeddings</strong>: Local all-MiniLM-L6-v2 (~90MB RAM)</div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Try Sample Questions</h3>
+              <div class="examples" style="flex-direction: column;">
+                <button class="example" onclick="switchAndAsk('How do I connect to the company VPN from home?')">1. VPN: Connect from home</button>
+                <button class="example" onclick="switchAndAsk('What is our password reset policy and character length?')">2. Policy: Password rules</button>
+                <button class="example" onclick="switchAndAsk('What is the latest status of Microsoft 365 services?')">3. Web Search: M365 outage</button>
+                <button class="example" onclick="switchAndAsk('Please create a P1 ticket: building network switch is completely down!')">4. Ticket: P1 Outage (HITL)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── TAB 2: AI SUPPORT CHAT ── -->
+      <section id="tab-chat" class="tab-content">
+        <div class="chat-layout">
+          <div class="chat-container">
+            <section id="chat" class="chat-area">
+              <div class="message assistant">
+                <div class="avatar">AI</div>
+                <div class="bubble">
+                  <strong>Enterprise IT Support Copilot</strong>
+                  <p>I have access to NovaRetail internal IT documentation, troubleshooting runbooks, the ticket registry, and live web search fallback. How may I assist you today?</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="composer-wrap">
+              <div class="examples">
+                <button class="example">How do I connect to the company VPN from home?</button>
+                <button class="example">Can support personnel ask for my password or MFA code?</button>
+                <button class="example">What should I do if my corporate laptop is stolen?</button>
+                <button class="example">Create a P2 ticket: marketing team is blocked on SSO access</button>
+              </div>
+              <form id="chatForm" class="composer">
+                <textarea id="question" rows="2" placeholder="Ask an IT support question, request diagnostics, or create a ticket..." required></textarea>
+                <button type="submit" class="send-btn">Ask Agent</button>
+              </form>
+            </section>
+          </div>
+
+          <!-- Trace Sidebar -->
+          <aside class="trace-panel">
+            <h2>Agent Execution Trace</h2>
+            <p class="muted">Live LangGraph node routing and decision path.</p>
+            <div id="trace" class="trace-list">
+              <div class="empty">Submit a query to inspect live execution decisions.</div>
+            </div>
+            <div class="source-box">
+              <span>Final Route / Source</span>
+              <strong id="sourceUsed">—</strong>
+            </div>
+            <div class="source-box" style="margin-top: 10px;">
+              <span>Latency</span>
+              <strong id="latencyDisplay">—</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ── TAB 3: KNOWLEDGE BASE ── -->
+      <section id="tab-kb" class="tab-content section-view">
+        <div class="section-header">
+          <div>
+            <h2>Ingested Knowledge Base</h2>
+            <p class="muted">Private documents indexed into Pinecone with SHA-256 deduplication and metadata tracking.</p>
+          </div>
+          <button class="btn-primary" onclick="openUploadModal()">+ Ingest New Document</button>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Document ID</th>
+                <th>Filename</th>
+                <th>Type</th>
+                <th>Chunks</th>
+                <th>Content Hash</th>
+                <th>Uploaded At</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="documentsTableBody">
+              <tr><td colspan="7" class="empty" style="text-align: center; padding: 24px;">Loading indexed documents...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ── TAB 4: IT SUPPORT TICKETS ── -->
+      <section id="tab-tickets" class="tab-content section-view">
+        <div class="section-header">
+          <div>
+            <h2>IT Support Tickets</h2>
+            <p class="muted">Persistent service desk ticket management with automated priority triage.</p>
+          </div>
+          <button class="btn-primary" onclick="openTicketModal()">+ Create Ticket</button>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Ticket ID</th>
+                <th>Category</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Description</th>
+                <th>Created At</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="ticketsTableBody">
+              <tr><td colspan="7" class="empty" style="text-align: center; padding: 24px;">Loading tickets...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ── TAB 5: PENDING APPROVALS (HITL) ── -->
+      <section id="tab-approvals" class="tab-content section-view">
+        <div class="section-header">
+          <div>
+            <h2>Human-in-the-Loop Approvals</h2>
+            <p class="muted">Safety gate: High-priority incidents (P1/P2) require explicit human sign-off before execution.</p>
+          </div>
+          <button class="btn-secondary" onclick="loadApprovals()">Refresh Approvals</button>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Approval ID</th>
+                <th>Ticket ID</th>
+                <th>Priority</th>
+                <th>Action Requested</th>
+                <th>Requested At</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="approvalsTableBody">
+              <tr><td colspan="6" class="empty" style="text-align: center; padding: 24px;">No pending approvals.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ── TAB 6: EVALUATION DASHBOARD ── -->
+      <section id="tab-eval" class="tab-content section-view">
+        <div class="section-header">
+          <div>
+            <h2>Evaluation & Benchmark Metrics</h2>
+            <p class="muted">Calculated from 100 enterprise IT test cases across IR, generation, and performance dimensions.</p>
+          </div>
+          <a href="/data/reports/eval_report_latest.html" target="_blank" class="btn-secondary" style="text-decoration: none;">View Full HTML Report</a>
+        </div>
+
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="label">Recall@4</div>
+            <div id="evalRecall" class="value">—</div>
+            <div class="sub">Ground-truth doc coverage</div>
+          </div>
+          <div class="metric-card">
+            <div class="label">Precision@4</div>
+            <div id="evalPrecision" class="value">—</div>
+            <div class="sub">Relevant retrieved ratio</div>
+          </div>
+          <div class="metric-card">
+            <div class="label">MRR (Mean Reciprocal Rank)</div>
+            <div id="evalMRR" class="value">—</div>
+            <div class="sub">1.0 = first rank match</div>
+          </div>
+          <div class="metric-card">
+            <div class="label">NDCG@4</div>
+            <div id="evalNDCG" class="value">—</div>
+            <div class="sub">Discounted cumulative gain</div>
+          </div>
+          <div class="metric-card">
+            <div class="label">Fact Coverage</div>
+            <div id="evalFacts" class="value">—</div>
+            <div class="sub">Technical keyword accuracy</div>
+          </div>
+          <div class="metric-card">
+            <div class="label">Lexical Faithfulness</div>
+            <div id="evalFaith" class="value">—</div>
+            <div class="sub">Evidence grounding support</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Real Recorded Query Latencies (Live Telemetry)</h3>
+          <div class="metrics-grid" style="margin-bottom: 0;">
+            <div class="metric-card">
+              <div class="label">Average Latency</div>
+              <div id="telemetryAvg" class="value">—</div>
+            </div>
+            <div class="metric-card">
+              <div class="label">p50 Latency</div>
+              <div id="telemetryP50" class="value">—</div>
+            </div>
+            <div class="metric-card">
+              <div class="label">p95 Latency</div>
+              <div id="telemetryP95" class="value">—</div>
+            </div>
+            <div class="metric-card">
+              <div class="label">p99 Latency</div>
+              <div id="telemetryP99" class="value">—</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── TAB 7: SYSTEM HEALTH ── -->
+      <section id="tab-health" class="tab-content section-view">
+        <div class="section-header">
+          <div>
+            <h2>System Health & Diagnostics</h2>
+            <p class="muted">Live operational telemetry across all services and dependencies.</p>
+          </div>
+          <button class="btn-secondary" onclick="loadHealth()">Check Status</button>
+        </div>
+
+        <div class="overview-grid">
+          <div>
+            <div class="card">
+              <h3>Service Diagnostics</h3>
+              <table style="background: transparent;">
+                <tbody>
+                  <tr><td>FastAPI Service</td><td><span class="badge badge-open">Operational (200 OK)</span></td></tr>
+                  <tr><td>Groq LLM Engine</td><td><span class="badge badge-open" id="healthModel">openai/gpt-oss-20b</span></td></tr>
+                  <tr><td>HuggingFace Embedding Adapter</td><td><span class="badge badge-open" id="healthEmbed">all-MiniLM-L6-v2 (384d)</span></td></tr>
+                  <tr><td>Pinecone Vector Store</td><td><span class="badge badge-open">Connected (industry-agentic-rag-kb)</span></td></tr>
+                  <tr><td>Tavily Web Search</td><td><span class="badge badge-open">Active Fallback</span></td></tr>
+                  <tr><td>SQLite Audit & Registry</td><td><span class="badge badge-open">Active (/data/audit.db)</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div>
+            <div class="card">
+              <h3>Telemetry Summary</h3>
+              <div id="healthTelemetry" style="font-size: 13px; line-height: 1.8; color: var(--text-muted);">
+                Loading telemetry...
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- ── Ingest Document Modal ── -->
+  <div id="uploadModal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2>Ingest Company Document</h2>
+        <button onclick="closeUploadModal()">×</button>
+      </div>
+      <p class="muted">Upload PDF, TXT, Markdown, CSV, or DOCX. The document is chunked, embedded locally, and upserted into Pinecone with SHA-256 deduplication.</p>
+      <input id="adminKey" type="password" placeholder="Admin API Key" />
+      <input id="fileInput" type="file" accept=".pdf,.txt,.md,.docx,.csv" />
+      <button id="uploadBtn" class="send-btn full">Index Document</button>
+      <div id="uploadStatus" class="upload-status"></div>
+    </div>
+  </div>
+
+  <!-- ── Create Ticket Modal ── -->
+  <div id="ticketModal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2>Create IT Support Ticket</h2>
+        <button onclick="closeTicketModal()">×</button>
+      </div>
+      <p class="muted">Submit a support request to the internal IT service desk.</p>
+      <label style="font-size: 12px; color: var(--text-muted);">Category</label>
+      <input id="ticketCategory" type="text" placeholder="e.g. VPN, Hardware, Access, Network" value="Hardware" />
+
+      <label style="font-size: 12px; color: var(--text-muted);">Priority Level</label>
+      <select id="ticketPriority">
+        <option value="P3">P3 - Individual user degraded / blocked</option>
+        <option value="P4">P4 - Routine request / inquiry</option>
+        <option value="P2">P2 - Major team blocked (Requires Approval)</option>
+        <option value="P1">P1 - Critical company-wide outage (Requires Approval)</option>
+      </select>
+
+      <label style="font-size: 12px; color: var(--text-muted);">Description</label>
+      <textarea id="ticketDescription" rows="3" placeholder="Provide details of the problem..."></textarea>
+
+      <button id="submitTicketBtn" class="send-btn full">Submit Ticket</button>
+      <div id="ticketStatus" class="upload-status"></div>
+    </div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

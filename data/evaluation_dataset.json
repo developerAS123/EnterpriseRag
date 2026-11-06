@@ -1,0 +1,1418 @@
+[
+  {
+    "id": 1,
+    "category": "VPN Access & Troubleshooting",
+    "question": "How do I connect to the company VPN from home?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "novasecure",
+      "software portal",
+      "gateway",
+      "mfa"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 2,
+    "category": "VPN Access & Troubleshooting",
+    "question": "Which VPN client is approved for company laptops?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "novasecure",
+      "software portal"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 3,
+    "category": "VPN Access & Troubleshooting",
+    "question": "What should I do if the corporate VPN connection fails?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "restart",
+      "gateway",
+      "firewall",
+      "screenshot"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 4,
+    "category": "VPN Access & Troubleshooting",
+    "question": "Can I disable my antivirus firewall to get the VPN to connect?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "do not disable",
+      "endpoint security",
+      "firewall"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 5,
+    "category": "VPN Access & Troubleshooting",
+    "question": "Do I need MFA every time I log into the company VPN?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "complete mfa",
+      "email",
+      "password"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 6,
+    "category": "VPN Access & Troubleshooting",
+    "question": "Where can I download the NovaSecure VPN installer?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "internal software portal"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 7,
+    "category": "VPN Access & Troubleshooting",
+    "question": "How do I choose the best VPN gateway location?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "closest corporate gateway"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 8,
+    "category": "VPN Access & Troubleshooting",
+    "question": "What details are required when submitting a VPN failure ticket?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "screenshot",
+      "error",
+      "ticket"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 9,
+    "category": "VPN Access & Troubleshooting",
+    "question": "Are third-party VPN clients allowed on company machines?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "novasecure",
+      "software portal"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 10,
+    "category": "VPN Access & Troubleshooting",
+    "question": "Is VPN mandatory when accessing internal systems remotely?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "mandatory",
+      "outside the office",
+      "internal systems"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 11,
+    "category": "Password Policy & Self-Service Resets",
+    "question": "What is the minimum length for company passwords?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "14 characters"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 12,
+    "category": "Password Policy & Self-Service Resets",
+    "question": "How do I reset my forgotten Windows login password?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "self-service",
+      "identity portal"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 13,
+    "category": "Password Policy & Self-Service Resets",
+    "question": "How many failed login attempts lock a user account?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "five",
+      "locked",
+      "5"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 14,
+    "category": "Password Policy & Self-Service Resets",
+    "question": "Can IT service desk ask me for my password over chat?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "never share",
+      "passwords",
+      "mfa codes"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 15,
+    "category": "Password Policy & Self-Service Resets",
+    "question": "What should I do if self-service password recovery fails?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "contact it service desk"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 16,
+    "category": "Password Policy & Self-Service Resets",
+    "question": "Does password policy require special characters and numbers?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "14 characters",
+      "identity portal"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 17,
+    "category": "Password Policy & Self-Service Resets",
+    "question": "How long is an account locked after 5 failed login attempts?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "temporarily locked"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 18,
+    "category": "Password Policy & Self-Service Resets",
+    "question": "Is it acceptable to write down my corporate password on a post-it note?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "never share",
+      "password policy"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 19,
+    "category": "Password Policy & Self-Service Resets",
+    "question": "Can my manager authorize IT to give them my password?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "never share",
+      "support personnel"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 20,
+    "category": "Password Policy & Self-Service Resets",
+    "question": "Where is the self-service password reset portal located?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "self-service identity portal"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 21,
+    "category": "Multi-Factor Authentication (MFA)",
+    "question": "Which MFA methods are approved by company security policy?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "company authenticator app",
+      "hardware security keys"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 22,
+    "category": "Multi-Factor Authentication (MFA)",
+    "question": "Is SMS allowed as a primary MFA method?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "sms should only be used",
+      "recovery method"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 23,
+    "category": "Multi-Factor Authentication (MFA)",
+    "question": "Can support staff ask me to read out my MFA one-time passcode?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "never share",
+      "support personnel"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 24,
+    "category": "Multi-Factor Authentication (MFA)",
+    "question": "What systems require mandatory multi-factor authentication?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "email",
+      "vpn",
+      "cloud administration"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 25,
+    "category": "Multi-Factor Authentication (MFA)",
+    "question": "What hardware keys are supported for two-factor login?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "registered hardware security keys"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 26,
+    "category": "Multi-Factor Authentication (MFA)",
+    "question": "How do I re-enroll MFA if I get a new mobile phone?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "authenticator app",
+      "hardware security key"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 27,
+    "category": "Multi-Factor Authentication (MFA)",
+    "question": "Why is SMS not recommended as the main MFA method?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "recovery method",
+      "authenticator app"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 28,
+    "category": "Multi-Factor Authentication (MFA)",
+    "question": "Who do I notify if I lose my MFA hardware key?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "it service desk",
+      "security"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 29,
+    "category": "Multi-Factor Authentication (MFA)",
+    "question": "Is MFA required when working from inside the corporate office?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "mandatory",
+      "email",
+      "vpn"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 30,
+    "category": "Multi-Factor Authentication (MFA)",
+    "question": "Can I use personal authenticator apps for company SSO?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "company authenticator app"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 31,
+    "category": "Corporate Email & Outlook",
+    "question": "What are the first steps when troubleshooting email send/receive issues?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "one user or many",
+      "network connectivity",
+      "service status"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 32,
+    "category": "Corporate Email & Outlook",
+    "question": "Should I ask a user to reinstall Outlook during a wide email outage?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "do not ask each user to reinstall",
+      "escalate"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 33,
+    "category": "Corporate Email & Outlook",
+    "question": "How do I verify if email issues affect single or multiple employees?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "service status dashboard",
+      "one user or many users"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 34,
+    "category": "Corporate Email & Outlook",
+    "question": "What should a single user do if their Outlook stops updating?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "sign out and back in",
+      "mailbox quota",
+      "web client"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 35,
+    "category": "Corporate Email & Outlook",
+    "question": "What is the mailbox quota check procedure in the runbook?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "verify mailbox quota"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 36,
+    "category": "Corporate Email & Outlook",
+    "question": "When should an email issue be escalated to infrastructure team?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "widespread incidents",
+      "suspected service incident"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 37,
+    "category": "Corporate Email & Outlook",
+    "question": "How can an employee access mail if Outlook desktop client crashes?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "test the web client"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 38,
+    "category": "Corporate Email & Outlook",
+    "question": "What should IT check before asking an employee to re-create their Outlook profile?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "sign out and back in",
+      "quota",
+      "web client"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 39,
+    "category": "Corporate Email & Outlook",
+    "question": "Does email troubleshooting require checking the service status dashboard?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "check network connectivity",
+      "service status dashboard"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 40,
+    "category": "Corporate Email & Outlook",
+    "question": "What priority is assigned to an enterprise-wide email server crash?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "p1",
+      "company-wide outage"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 41,
+    "category": "Network & Wi-Fi Connectivity",
+    "question": "What steps should I follow to troubleshoot office Wi-Fi drops?",
+    "expected_route": "guidance",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "corp-secure",
+      "credentials",
+      "dns"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 42,
+    "category": "Network & Wi-Fi Connectivity",
+    "question": "How do I connect to Corp-Secure wireless network in the office?",
+    "expected_route": "guidance",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "802.1x",
+      "credentials"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 43,
+    "category": "Network & Wi-Fi Connectivity",
+    "question": "How do I test DNS resolution on my company laptop?",
+    "expected_route": "guidance",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "ping",
+      "gateway",
+      "dns"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 44,
+    "category": "Network & Wi-Fi Connectivity",
+    "question": "What is the escalation priority when an entire office switch goes down?",
+    "expected_route": "guidance",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "p1",
+      "entire floor",
+      "switches"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 45,
+    "category": "Network & Wi-Fi Connectivity",
+    "question": "What should I check if Ethernet port in my desk pod is inactive?",
+    "expected_route": "guidance",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "network connectivity",
+      "service status"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 46,
+    "category": "Network & Wi-Fi Connectivity",
+    "question": "How do I verify if network issues are localized to my workstation?",
+    "expected_route": "guidance",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "confirm whether the issue affects one user or many"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 47,
+    "category": "Network & Wi-Fi Connectivity",
+    "question": "Does connecting to guest Wi-Fi allow access to internal code repositories?",
+    "expected_route": "guidance",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "must use the company vpn",
+      "internal systems"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 48,
+    "category": "Network & Wi-Fi Connectivity",
+    "question": "What should I do if my laptop fails 802.1x enterprise authentication?",
+    "expected_route": "guidance",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "system settings",
+      "credentials",
+      "certificate"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 49,
+    "category": "Network & Wi-Fi Connectivity",
+    "question": "How do I report a dead Wi-Fi zone on the third floor?",
+    "expected_route": "guidance",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "open an it ticket",
+      "priority"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 50,
+    "category": "Network & Wi-Fi Connectivity",
+    "question": "Who handles corporate network gateway maintenance?",
+    "expected_route": "guidance",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "it service desk",
+      "infrastructure"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 51,
+    "category": "Laptop Hardware & Performance",
+    "question": "What should be checked first when an employee reports a slow laptop?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "cpu",
+      "memory",
+      "storage free space",
+      "startup applications"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 52,
+    "category": "Laptop Hardware & Performance",
+    "question": "Can IT support disable antivirus scans to speed up a slow laptop?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "do not disable security agents"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 53,
+    "category": "Laptop Hardware & Performance",
+    "question": "When should a laptop performance issue be escalated to hardware repair?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "hardware diagnostics report failure",
+      "repeated shutdowns"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 54,
+    "category": "Laptop Hardware & Performance",
+    "question": "What diagnostic checks are mandatory before scheduling a laptop replacement?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "operating system updates",
+      "endpoint security",
+      "diagnostics"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 55,
+    "category": "Laptop Hardware & Performance",
+    "question": "What is the policy regarding operating system updates and patches?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "operating system updates",
+      "endpoint security scan status"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 56,
+    "category": "Laptop Hardware & Performance",
+    "question": "How do I check free disk space on a sluggish company machine?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "storage free space",
+      "cpu",
+      "memory"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 57,
+    "category": "Laptop Hardware & Performance",
+    "question": "What should IT do if software remediation fails to stop kernel crashes?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "escalate",
+      "hardware diagnostics",
+      "repeated shutdowns"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 58,
+    "category": "Laptop Hardware & Performance",
+    "question": "Is thermal throttling treated as a hardware diagnostic issue?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "diagnostics report failure",
+      "escalate"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 59,
+    "category": "Laptop Hardware & Performance",
+    "question": "What startup programs can employees disable themselves?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "startup applications",
+      "task manager"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 60,
+    "category": "Laptop Hardware & Performance",
+    "question": "What priority is assigned if an executive laptop fails during a keynote?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "p2",
+      "major team blocked",
+      "workaround"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 61,
+    "category": "Approved Software & Admin Rights",
+    "question": "Where are employees allowed to install software from?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "company software portal"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 62,
+    "category": "Approved Software & Admin Rights",
+    "question": "What is the approval process for software not in the portal?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "manager approval",
+      "it security review"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 63,
+    "category": "Approved Software & Admin Rights",
+    "question": "Can employees request permanent local administrator privileges?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "administrator access is not granted simply to install unapproved applications"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 64,
+    "category": "Approved Software & Admin Rights",
+    "question": "Are developers allowed to install unauthorized open-source packages?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "software portal",
+      "security review"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 65,
+    "category": "Approved Software & Admin Rights",
+    "question": "How long does a third-party software IT security review usually take?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "manager approval",
+      "security review"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 66,
+    "category": "Approved Software & Admin Rights",
+    "question": "Can a manager grant administrator access without IT security review?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "requires manager approval and it security review"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 67,
+    "category": "Approved Software & Admin Rights",
+    "question": "What happens if unapproved software is detected on a corporate device?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "endpoint security",
+      "unapproved applications"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 68,
+    "category": "Approved Software & Admin Rights",
+    "question": "Is Docker Desktop available in the self-service Software Portal?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "software portal"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 69,
+    "category": "Approved Software & Admin Rights",
+    "question": "How do I submit a new business application request for my department?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "manager approval",
+      "it security review"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 70,
+    "category": "Approved Software & Admin Rights",
+    "question": "Are browser extensions subject to software installation policies?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "install business software only from the company software portal"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 71,
+    "category": "Security Policies & Lost Devices",
+    "question": "What is the immediate action required if a company laptop is stolen?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "immediately report",
+      "it service desk",
+      "manager"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 72,
+    "category": "Security Policies & Lost Devices",
+    "question": "What information should I provide when reporting a lost laptop?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "device asset tag",
+      "last known location"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 73,
+    "category": "Security Policies & Lost Devices",
+    "question": "Should an employee attempt remote device wipe or recovery themselves?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "do not attempt to remotely recover the device yourself"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 74,
+    "category": "Security Policies & Lost Devices",
+    "question": "What does IT do once a laptop is confirmed stolen?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "device lock/wipe procedures",
+      "coordinate with security"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 75,
+    "category": "Security Policies & Lost Devices",
+    "question": "Who coordinates device security incidents with physical security?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "it will initiate device lock",
+      "coordinate with security"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 76,
+    "category": "Security Policies & Lost Devices",
+    "question": "What should I do if I find an unattended company laptop in a conference room?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "it service desk",
+      "report"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 77,
+    "category": "Security Policies & Lost Devices",
+    "question": "Is finding the asset tag required when reporting a misplaced device?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "provide the device asset tag if available"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 78,
+    "category": "Security Policies & Lost Devices",
+    "question": "Can local police recover the device instead of notifying IT?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "immediately report",
+      "service desk",
+      "manager"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 79,
+    "category": "Security Policies & Lost Devices",
+    "question": "Does IT have the ability to remotely wipe lost corporate laptops?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "device lock/wipe procedures"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 80,
+    "category": "Security Policies & Lost Devices",
+    "question": "What constitutes a critical security incident under company policy?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "company_it_handbook.md"
+    ],
+    "expected_facts": [
+      "lost or stolen company laptop",
+      "security"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 81,
+    "category": "Support Ticket Workflows & SLA",
+    "question": "What constitutes a P1 priority IT ticket?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "company-wide outage",
+      "critical security incident"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 82,
+    "category": "Support Ticket Workflows & SLA",
+    "question": "What is the definition of a P2 priority incident?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "major team blocked with no workaround"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 83,
+    "category": "Support Ticket Workflows & SLA",
+    "question": "What is a P3 priority support ticket in the runbook?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "individual user blocked or degraded with limited workaround"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 84,
+    "category": "Support Ticket Workflows & SLA",
+    "question": "What kind of issues qualify as P4 low-impact requests?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "standard request",
+      "information request",
+      "low-impact"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 85,
+    "category": "Support Ticket Workflows & SLA",
+    "question": "Does an individual user password lockout count as P1 or P3?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "individual user blocked",
+      "p3"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 86,
+    "category": "Support Ticket Workflows & SLA",
+    "question": "What priority is assigned to a building-wide network failure?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "p1",
+      "company-wide outage"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 87,
+    "category": "Support Ticket Workflows & SLA",
+    "question": "When should a ticket be escalated from P3 to P2?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "no workaround",
+      "major team blocked"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 88,
+    "category": "Support Ticket Workflows & SLA",
+    "question": "Who can authorize high-severity P1 ticket escalations?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "service desk",
+      "escalate"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 89,
+    "category": "Support Ticket Workflows & SLA",
+    "question": "How is a routine software installation request categorized?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "p4",
+      "standard request"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 90,
+    "category": "Support Ticket Workflows & SLA",
+    "question": "What priority is an executive unable to join an earnings call?",
+    "expected_route": "kb",
+    "expected_sources": [
+      "service_desk_runbook.md"
+    ],
+    "expected_facts": [
+      "p2",
+      "blocked with no workaround"
+    ],
+    "is_out_of_scope": false
+  },
+  {
+    "id": 91,
+    "category": "Vendor Outages & External Search Fallback",
+    "question": "What is the latest Microsoft 365 status update today?",
+    "expected_route": "web_search",
+    "expected_sources": [
+      "external_web"
+    ],
+    "expected_facts": [
+      "microsoft",
+      "status",
+      "service"
+    ],
+    "is_out_of_scope": true
+  },
+  {
+    "id": 92,
+    "category": "Vendor Outages & External Search Fallback",
+    "question": "Is there an ongoing Zoom cloud phone system outage?",
+    "expected_route": "web_search",
+    "expected_sources": [
+      "external_web"
+    ],
+    "expected_facts": [
+      "zoom",
+      "outage",
+      "status"
+    ],
+    "is_out_of_scope": true
+  },
+  {
+    "id": 93,
+    "category": "Vendor Outages & External Search Fallback",
+    "question": "What are the latest AWS us-east-1 service health dashboard alerts?",
+    "expected_route": "web_search",
+    "expected_sources": [
+      "external_web"
+    ],
+    "expected_facts": [
+      "aws",
+      "health",
+      "status"
+    ],
+    "is_out_of_scope": true
+  },
+  {
+    "id": 94,
+    "category": "Vendor Outages & External Search Fallback",
+    "question": "What is the current Google Workspace incident status for Gmail?",
+    "expected_route": "web_search",
+    "expected_sources": [
+      "external_web"
+    ],
+    "expected_facts": [
+      "google",
+      "workspace",
+      "gmail"
+    ],
+    "is_out_of_scope": true
+  },
+  {
+    "id": 95,
+    "category": "Vendor Outages & External Search Fallback",
+    "question": "Has GitHub reported any webhook delivery delays recently?",
+    "expected_route": "web_search",
+    "expected_sources": [
+      "external_web"
+    ],
+    "expected_facts": [
+      "github",
+      "status",
+      "webhook"
+    ],
+    "is_out_of_scope": true
+  },
+  {
+    "id": 96,
+    "category": "Vendor Outages & External Search Fallback",
+    "question": "What is the latest CrowdStrike falcon sensor release note?",
+    "expected_route": "web_search",
+    "expected_sources": [
+      "external_web"
+    ],
+    "expected_facts": [
+      "crowdstrike",
+      "sensor",
+      "update"
+    ],
+    "is_out_of_scope": true
+  },
+  {
+    "id": 97,
+    "category": "Vendor Outages & External Search Fallback",
+    "question": "Is Slack experiencing global message latency issues right now?",
+    "expected_route": "web_search",
+    "expected_sources": [
+      "external_web"
+    ],
+    "expected_facts": [
+      "slack",
+      "status",
+      "connectivity"
+    ],
+    "is_out_of_scope": true
+  },
+  {
+    "id": 98,
+    "category": "Vendor Outages & External Search Fallback",
+    "question": "What are the recommended troubleshooting steps for macOS Sequoia Wi-Fi bugs?",
+    "expected_route": "web_search",
+    "expected_sources": [
+      "external_web"
+    ],
+    "expected_facts": [
+      "macos",
+      "wi-fi",
+      "troubleshooting"
+    ],
+    "is_out_of_scope": true
+  },
+  {
+    "id": 99,
+    "category": "Vendor Outages & External Search Fallback",
+    "question": "Are there known vulnerabilities in Apache Log4j current releases?",
+    "expected_route": "web_search",
+    "expected_sources": [
+      "external_web"
+    ],
+    "expected_facts": [
+      "vulnerabilities",
+      "security",
+      "cve"
+    ],
+    "is_out_of_scope": true
+  },
+  {
+    "id": 100,
+    "category": "Vendor Outages & External Search Fallback",
+    "question": "What is the latest Okta identity service incident report?",
+    "expected_route": "web_search",
+    "expected_sources": [
+      "external_web"
+    ],
+    "expected_facts": [
+      "okta",
+      "identity",
+      "status"
+    ],
+    "is_out_of_scope": true
+  }
+]
