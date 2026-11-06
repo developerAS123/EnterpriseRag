@@ -1,6 +1,6 @@
 # Enterprise IT Support Agentic RAG Copilot — Portfolio Edition
 
-[![CI Pipeline](https://github.com/your-username/EnterpriseLevelRAG/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/EnterpriseLevelRAG/actions)
+[![CI Pipeline](https://github.com/developerAS123/EnterpriseRag/actions/workflows/ci.yml/badge.svg)](https://github.com/developerAS123/EnterpriseRag/actions)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.162.0-009688.svg)](https://fastapi.tiangolo.com)
 [![LangGraph](https://img.shields.io/badge/LangGraph-1.0.1-orange.svg)](https://github.com/langchain-ai/langgraph)
